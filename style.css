@@ -1,0 +1,280 @@
+
+
+
+
+
+
+/* ----- CSS (DHARMENDRA | DIA-58) -------*/
+
+* { margin: 0; padding: 0; font-family: arial;}
+a { text-decoration: none; }
+p { font-family: arial; }
+
+
+/* ------ SMOOTH SCROLLING ---------- */
+ html {scroll-behavior: smooth;}
+
+
+/* --------------- SCROLL BUTTON STYLE width------------- */
+::-webkit-scrollbar {width: 10px;}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 35px #FFEF3C; 
+  border-radius: 0px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background:#9933cc  ;  
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: teal; 
+}
+/*-----------------------------------------------------*/
+
+
+ /*----------------- TABLE -------------------*/
+
+.tbl{ padding: 20px;}
+table {width:100%;}
+table,th,td {border:1px solid black; border-collapse:collapse;}
+th,td {padding:15px; text-align:left;}
+.table th {background-color:orange; color:black;}
+.table tr:nth-child(even){background-color:#eee;}
+.table tr:nth-child(odd) { background-color:#fff;}
+
+/*-----------------------------------------------------*/
+
+
+
+/*--------  FIRST UPPER NAV USING LIST -------*/
+
+ul {
+list-style: none; /* make list horizontal and remove dots */
+background-image: linear-gradient(to right,  yellow  0%, #FFEF3C 99%);
+height: 20px;  line-height: 20px;
+font-size: 12px; font-family: arial;
+padding-left: 20px;
+}
+.uppertablinks a { float: left; padding: 0px 5px; text-decoration: none;}
+
+
+/*-----------------------------------------------------*/
+
+
+
+/*-----------   MAIN NAVIGATION   ----------*/
+
+/* ------   NAV  STICKY CSS ---------- */
+
+#nav { top:0; position:-webkit-sticky; position:sticky; }
+
+/* ------   NAV  MENU STYLE  ---------- */
+.navsec { 
+  background-image: linear-gradient(to top, #9933cc 20%, #9933cc 80%);  
+  box-shadow: 0 10px 20px rgba(255, 239, 60 , .3);	 
+  width: 100%; height :60px;  display: flex; 
+  justify-content: space-around;  align-items: center; }
+
+/*-------- LOGO SECTION -------*/
+
+.logo { width: 20%; color: yellow; padding-left: 20px; }
+.logo h1{font-family:Arial ;}
+
+/*-------- NAV TOPIC SECTIONS  -------*/
+
+nav {	width: 60%; display: flex; justify-content: space-around; }
+nav a {color: white; text-decoration: none; font-family:Arial ;
+    font-size: 18px; }
+nav a:hover { color: yellow;}
+
+/*-----------------------------------------------------*/
+
+
+
+
+/*--------------  WEBSITE IMAGE BANNER  ---------------*/
+
+.banimg { width:100%; margin-bottom: 0px; min-height:100%;  }
+
+/*-----------------------------------------------------*/
+
+
+
+
+/*  ---------------- MARQUES LATEST NEWS ------------*/
+
+.news{padding: 0px; font-family: arial;  text-align: left;  
+  border-radius: 23px; background-color : #FFEF3C; 
+  margin-left: 100px; margin-bottom: 50px; }
+
+.news a { text-decoration: none;  color :black; align-content: center;}
+.news a:hover{ color: blue;}
+
+/*-----------------------------------------------------*/
+
+
+
+/*---------------------------  WEB CONTENT 1 ------------------------*/
+
+/*---------------------- MOBILE RESPONSIVE -----------------*/
+
+.lft {height:500px; width:40%; float:left; background-color:#9933cc;}
+
+.rgt {height:500px; width:60%; float:left; background-color:#9933cc;}
+
+@media screen and (max-width:800px) {.lft,.rgt {width: 100%;}}
+
+/*-----------------------------------------------------*/
+
+/*-------------- IMAGE BACKGROUND CURVE -----------------*/
+
+.rightside   {
+	border-radius: 72% 28% 70% 30% / 39% 30% 70% 61% ;
+	background: linear-gradient(to right, yellow, #e100ff);
+	margin: 20px;   }
+
+/*-----------------------------------------------------*/
+
+
+
+/*------------------ ABOUT SECTION  -------------------*/
+
+.leftside { font-family: arial; padding: 40px; margin: 30px; 
+ border-radius: 50px; width: 70%; height: 60%; }
+
+.leftside .btn1, .btn2 {
+text-decoration: none;
+font-weight: 900;
+font-size: 14px;
+font-family: arial;
+text-align: center;
+padding: 10px 12px;
+cursor: pointer;
+text-transform: uppercase;
+border-radius: 30px;
+display: inline-block;
+margin: 2px;
+ transition: 0.6s;
+}
+
+.leftside .btn1 {color:#fff;letter-spacing: 0;
+background-image: linear-gradient(to right, #4458dc 0%, #854fee 100%);
+border :double 1px transparent;
+box-shadow: 0 10px 30px rgba (118, 85, 225 , .3);
+
+}
+
+.leftside .btn2{border: 1px solid blue; color:#222; 
+	background-color: #fff; box-shadow: none;   }
+
+
+.leftside .btn1:hover {border: 1px solid blue;color:#222;
+ background-color: #fff;box-shadow: none;
+ background-image: none;   }
+
+.leftside .btn2:hover {color:#fff;letter-spacing: 0;
+	background-image: linear-gradient(to right, #4458dc 0%,  #854fee 100%);border: 0px;}
+
+
+/*------------------------------------------------------------------*/
+
+
+
+/*----------------------- TOPIC CARD  -----------------------*/
+
+ .card {
+  box-shadow: 0 4px 8px 0 rgba(255, 29, 60,0.5);
+  transition: 0.6s; 
+  border-radius: 10px;}
+
+.card:hover{
+	border: solid 0px;
+	border-color: orange;
+  box-shadow: 0 10px 20px 0 rgba(1, 213, 217,0.5);}
+
+/*------------------------------------------------------------------*/
+
+
+
+/* ------------ MOBILE RESPONSIVE FOR  OUR TEAM AVATAR -------------- */
+
+.avtr{   width:25%;  display: inline-block; }
+
+@media screen and (max-width: 800px) {.avtr {width: 50%;  height: 100%;}}
+
+/*------------------------------------------------------------*/
+
+
+
+
+
+/*----------------  CALCULATOR  BOX  ----------*/
+ .calci
+ {
+ background-color: #33b5e5;
+ height: 480px; 
+ font-family: arial;
+ padding: 10px; 
+ padding-bottom: 10px;   
+ display: flex;
+ justify-content: space-around;
+ }
+
+/*----------------   STYLING FOR CALCULATOR  ----------*/
+
+input[type="button"] {
+height:50px;
+border-radius: 10px;
+background-color:#e54b33;
+color: black;
+border-color:#33b5e5 ;
+width:70px;
+font-size:20px;
+color:rgb(144, 187, 211);
+}
+
+input[type="text"] {
+border-radius: 10px;
+text-align: left;
+background-color:white;
+border-color:green;
+width:90%;
+font-size:30px;
+color: red;
+}
+
+/*------------------------------------------------------------*/
+
+
+
+/*---------------------- FOOTER ---------------------------*/
+
+/* ------------  MOBILE RESPONSIVE FOR CONTACT FORM -------------- */
+
+
+.mobwid {float:left;  width:50%; height:100%;}
+
+@media screen and (max-width: 800px) {.mobwid {width: 100%;} }
+
+/*------------------------------------------------------------*/
+
+
+/* ------------  COPYRIGHT FOOTER -------------- */ 
+
+.cpyrgt{
+ background-color: #900b0b;
+ color: white;
+ font-family: arial;
+ padding: 10px; 
+ padding-bottom: 10px;   
+ display: flex;
+ justify-content: space-around;"
+
+ }
+ 
+/*------------------------------------------------------------*/
